@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="main-body">
         <ul>
             <MovieDetail v-for="movie in movies" :key="movie.id" :movieResult="movie" />
         </ul>
@@ -34,5 +34,11 @@ export default {
 </script>
 
 <style scoped>
+
+.main-body ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 </style>
