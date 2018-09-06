@@ -1,8 +1,8 @@
 <template>
 <ul>
     <header>{{movieResult.title}}</header>
-    <img :src="addImage(movieResult.poster_path)" alt="kats"/>
-    <header>Release Date: {{movieResult.release_date}}</header>
+    <img :src="addImage(movieResult.poster_path)" alt="poster"/>
+    <footer>Release Date: {{movieResult.release_date}}</footer>
     <p>{{movieResult.overview}}</p>
 </ul>
 </template>
@@ -26,7 +26,17 @@ export default {
 
 <style scoped>
 img {
-    height: 25em;
+    height: 20em;
+    width: 15em;
+    border-radius: 1em;
+}
+
+ul {
+    background: #EAF3EA;
+}
+
+header {
+    font-size: 24px;
 }
 
 

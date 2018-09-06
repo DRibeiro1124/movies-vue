@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img  id="reel" alt="Reel" src="./assets/reel.jpg">
-    <header>Search for a movie:</header>
+    <header class="intro">Search for a movie:</header>
     <input type="text" placeholder="Movie Search"/>
     <MovieList />
   </div>
@@ -18,17 +18,29 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=ABeeZee|Caveat|Poiret+One');
+/* font-family: 'ABeeZee', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Caveat', cursive; */
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: 'Caveat', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  /* background: #EAF2EF; */
+  margin-right: 3em;
 }
 
 #reel {
   height: 15em;
+}
+
+.intro {
+  font-family: 'Poiret One', cursive;
+  font-size: 22px;
 }
 </style>
